@@ -14,7 +14,7 @@ module OmniAuth
 
       option :fields, ["id", "email-address", "first-name", "last-name", "headline", "industry", "picture-url", "public-profile-url", "location"]
 
-      option :scope, 'r_basicprofile r_emailaddress'
+      option :scope, 'r_liteprofile r_emailaddress'
 
       uid{ raw_info['id'] }
 
